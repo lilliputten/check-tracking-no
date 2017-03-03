@@ -25,7 +25,7 @@ var isUniqueNumber = checkTrackingNo.checkUniqueNumber();
 Description
 -----------
 
-Algorithm description see at [wiki page](https://ru.wikipedia.org/wiki/Почтовый_идентификатор).
+Algorithm description see at [wiki page (RU)](https://ru.wikipedia.org/wiki/Почтовый_идентификатор).
 
 Working with 13-digit mail tracking numbers:
 ```
