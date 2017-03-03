@@ -1,7 +1,7 @@
 {
   "name": "check-tracking-no",
   "version": "0.0.1",
-  "description": "Check mailing tracking number",
+  "description": "Simple minimalistic module for checking of mailing tracking numbers",
   "main": "index.js",
   "author": "lilliputten <lilliputten@yandex.ru> (http://lilliputten.ru)",
   "license": "MIT",
