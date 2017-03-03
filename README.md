@@ -17,9 +17,11 @@ Usage
 -----
 
 ```javascript
-var checkTrackingNo = require('check-tracking-no');
-checkTrackingNo.setNumber('XX123456789YY');
-var isUniqueNumber = checkTrackingNo.checkUniqueNumber();
+var testNumber = 'XX410342249YY';
+var CheckTrackingNo = require('check-tracking-no');
+var trackingNo = new CheckTrackingNo(testNumber);
+console.info( 'trackingNo', trackingNo.getNumber() );
+console.info( 'evalCheckNumber', trackingNo.evalCheckNumber() );
 ```
 
 Description
@@ -44,7 +46,7 @@ Check number evaluating algorithm
 var multNumbers = [ 8, 6, 4, 2, 3, 5, 9, 7 ];
 var summ = 0;
 for ( var i=0; i<8; i++ ) {
-    var n = checkTrackingNo.getUniqueNumberDigit(i);
+    var n = trackingNo.getUniqueNumberDigit(i);
     n *= multNumbers[i];
     summ += n;
 }
