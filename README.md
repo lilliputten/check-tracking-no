@@ -29,6 +29,7 @@ Description
 -----------
 
 Algorithm description see at [wiki page (RU)](https://ru.wikipedia.org/wiki/Почтовый_идентификатор).
+See also [Track number decoding (RU)](http://shopinfo.com.ua/threads/rasshifrovka-trek-nomera.1170/).
 
 Working with 13-digit mail tracking numbers:
 ```
