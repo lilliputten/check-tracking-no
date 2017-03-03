@@ -49,7 +49,7 @@ See method [evalCheckNumber](https://github.com/lilliputten/check-tracking-no/bl
 var multNumbers = [ 8, 6, 4, 2, 3, 5, 9, 7 ];
 var summ = 0;
 for ( var i=0; i<8; i++ ) {
-    var n = trackingNo.getUniqueNumberDigit(i);
+    var n = this.getUniqueNumberDigit(i);
     n *= multNumbers[i];
     summ += n;
 }
