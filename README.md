@@ -1,4 +1,6 @@
 [![GitHub Release](https://img.shields.io/github/release/lilliputten/check-tracking-no.svg)](https://github.com/lilliputten/check-tracking-no/releases)
+[![Build Status](https://api.travis-ci.org/lilliputten/check-tracking-no.svg?branch=master)](https://travis-ci.org/lilliputten/check-tracking-no)
+[![npm version](https://badge.fury.io/js/check-tracking-no.svg)](https://badge.fury.io/js/check-tracking-no)
 
 # check-tracking-no
 
