@@ -31,7 +31,7 @@ Algorithm description see at [wiki page (RU)](https://ru.wikipedia.org/wiki/По
 
 Working with 13-digit mail tracking numbers:
 ```
-Sample No:  XX123456789YY
+Sample No: XX123456789YY
 Positions: 0123456789012
            |||||||||||** . ##11-12 . Country code (##11-12)
            ||||||||||* ... #10 ..... Check digit (#10)
