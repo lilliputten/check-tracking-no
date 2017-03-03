@@ -25,7 +25,7 @@
     "extend": "^3.0.0"
   },
   "scripts": {
-    "update": "git add . -Av && git commit -am",
+    "commit": "git add . -Av && git commit -am",
     "test": "node node_modules/mocha/bin/mocha --reporter spec"
   }
 }
