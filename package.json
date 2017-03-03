@@ -1,0 +1,30 @@
+{
+  "name": "check-tracking-no",
+  "version": "0.0.1",
+  "description": "Check mailing tracking number",
+  "main": "index.js",
+  "author": "lilliputten <lilliputten@yandex.ru> (http://lilliputten.ru)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lilliputten/check-tracking-no.git"
+  },
+  "keywords": [
+    "mailing",
+    "tracking"
+  ],
+  "bugs": {
+    "url": "https://github.com/lilliputten/check-tracking-no/issues"
+  },
+  "homepage": "https://github.com/lilliputten/check-tracking-no#readme",
+  "devDependencies": {
+    "mocha": "~1.16.2",
+    "chai": "~1.8.1"
+  },
+  "dependencies": {
+    "extend": "^3.0.0"
+  },
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha --reporter spec"
+  }
+}
