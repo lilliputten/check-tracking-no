@@ -7,7 +7,7 @@
  *
  * @author lilliputten <lilliputten@yandex.ru>
  * @since 2017.03.03, 20:19
- * @version 2017.03.03, 21:51
+ * @version 2017.03.03, 22:38
  *
 */
 
@@ -84,6 +84,18 @@ var
 
     it('eval check number', function() {
         trackingNo.evalCheckNumber().should.equal( testNumberAt(8) );
+    });
+
+});/*}}}*/
+
+/*{{{*/describe('isCorrectCheckNumber', function() {
+
+    it('correct check number', function() {
+        trackingNo.isCorrectCheckNumber().should.be.true;
+    });
+
+    it('invalid check number (for uninitialized object)', function() {
+        emptyTrackingNo.isCorrectCheckNumber().should.be.false;
     });
 
 });/*}}}*/

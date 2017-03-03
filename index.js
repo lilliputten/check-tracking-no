@@ -7,7 +7,7 @@
  *
  * @author lilliputten <lilliputten@yandex.ru>
  * @since 2017.03.03, 20:19
- * @version 2017.03.03, 21:51
+ * @version 2017.03.03, 22:38
  *
 */
 
@@ -34,7 +34,7 @@ var CheckTrackingNo = function (no) /** @lends CheckTrackingNo */ {
 
     // Methods...
 
-    /** setNumber ** {{{ Set number
+    /** this.setNumber ** {{{ Set number
      * @param {string} no -- Number
      * @returns {self}
      */
@@ -43,14 +43,14 @@ var CheckTrackingNo = function (no) /** @lends CheckTrackingNo */ {
         return this;
     };/*}}}*/
 
-    /** getNumber ** {{{ Get number
+    /** this.getNumber ** {{{ Get number
      * @returns {string}
      */
     this.getNumber = function () {
         return this._no;
     },/*}}}*/
 
-    /** getUniqueNumberDigit ** {{{ Get digit of unique number (2-9 positions)
+    /** this.getUniqueNumberDigit ** {{{ Get digit of unique number (2-9 positions)
      * @param {number} pos - Digit position
      * @return {number}
      */
@@ -61,7 +61,7 @@ var CheckTrackingNo = function (no) /** @lends CheckTrackingNo */ {
             return parseInt(c, 10);
         }
 
-        throw 'Not a string value: '+this._no;
+        // throw 'Not a string value: '+this._no;
 
         return 0;
 
@@ -94,6 +94,14 @@ var CheckTrackingNo = function (no) /** @lends CheckTrackingNo */ {
 
     };/*}}}*/
 
+    /** this.isCorrectCheckNumber ** {{{ Evaluate cheking number
+     * @returns {boolean}
+     */
+    this.isCorrectCheckNumber = function () {
+        
+        return ( this.getCheckNumber() === this.evalCheckNumber() );
+    };/*}}}*/
+
 };
 
 // If in nodejs environment...
@@ -104,13 +112,13 @@ if ( module.parent ) {
 // Called from console: test/example (see tests in *.spec.js)
 else {
 
-    // 410342249
-    var testNumber = 'XX410342249YY';
+    var testNumber = process.argv[2] || 'XX410342249YY';
 
     var trackingNo = new CheckTrackingNo(testNumber);
 
-    console.info( 'trackingNo', trackingNo.getNumber() );
-    console.info( 'evalCheckNumber', trackingNo.evalCheckNumber() );
+    console.info( 'Number:', trackingNo.getNumber() );
+    console.info( 'evalCheckNumber:', trackingNo.evalCheckNumber() );
+    console.info( 'isCorrectCheckNumber:', trackingNo.isCorrectCheckNumber() );
 
 }
 

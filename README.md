@@ -22,6 +22,7 @@ var CheckTrackingNo = require('check-tracking-no');
 var trackingNo = new CheckTrackingNo(testNumber);
 console.info( 'trackingNo', trackingNo.getNumber() );
 console.info( 'evalCheckNumber', trackingNo.evalCheckNumber() );
+console.info( 'isCorrectCheckNumber:', trackingNo.isCorrectCheckNumber() );
 ```
 
 Description
