@@ -10,16 +10,16 @@ Install
 -------
 
 ```shell
-  npm install check-tracking-no --save
+npm install check-tracking-no --save
 ```
 
 Usage
 -----
 
 ```javascript
-    var checkTrackingNo = require('check-tracking-no');
-    checkTrackingNo.setNumber('XX123456789YY');
-    var isUniqueNumber = checkTrackingNo.checkUniqueNumber();
+var checkTrackingNo = require('check-tracking-no');
+checkTrackingNo.setNumber('XX123456789YY');
+var isUniqueNumber = checkTrackingNo.checkUniqueNumber();
 ```
 
 Description
