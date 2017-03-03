@@ -42,6 +42,9 @@ Positions: 0123456789012
 Check number evaluating algorithm
 ---------------------------------
 
+See method [evalCheckNumber](https://github.com/lilliputten/check-tracking-no/blob/a4300a/index.js#L77-L95) in
+[index.js](https://github.com/lilliputten/check-tracking-no/blob/master/index.js).
+
 ``` javascript
 var multNumbers = [ 8, 6, 4, 2, 3, 5, 9, 7 ];
 var summ = 0;
