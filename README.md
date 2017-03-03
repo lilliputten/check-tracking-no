@@ -4,7 +4,7 @@
 
 # check-tracking-no
 
-Module for checking of mailing tracking numbers.
+Simple minimalistic module for checking of mailing tracking numbers.
 
 Install
 -------
