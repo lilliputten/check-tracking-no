@@ -63,6 +63,7 @@ Positions: 0123456789012
            ||******** .... ##2-9 ... 8-digit unique number (##2-9)
            ** ............ ##0-1 ... Mailing type (##0-1)
 ```
+Using external [Country Codes](https://countrycode.org/) list.
 
 Check number evaluating algorithm
 ---------------------------------
