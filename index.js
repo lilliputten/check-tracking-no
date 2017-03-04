@@ -21,7 +21,7 @@ var
     libs = {
         extend : require('extend'),
         yaml : require('js-yaml'),
-        fs : require('fs-extra'),
+        fs : require('fs'),
         path : require('path'),
         downcache : require('downcache'),
         cheerio : require('cheerio'),

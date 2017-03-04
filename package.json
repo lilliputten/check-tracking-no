@@ -20,14 +20,13 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
-    "cheerio": "^0.22.0",
-    "downcache": "0.0.9",
-    "fs-extra": "^2.0.0",
-    "js-yaml": "^3.8.2",
     "mocha": "^3.2.0"
   },
   "dependencies": {
-    "extend": "^3.0.0"
+    "cheerio": "^0.22.0",
+    "downcache": "0.0.9",
+    "extend": "^3.0.0",
+    "js-yaml": "^3.8.2"
   },
   "scripts": {
     "commit": "git add . -Av && git commit -am",
