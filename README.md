@@ -17,33 +17,33 @@ Usage
 -----
 
 ```javascript
-    var testNumber = 'RS410342249EE';
+var testNumber = 'RS410342249EE';
 
-    var CheckTrackingNo = require('check-tracking-no');
+var CheckTrackingNo = require('check-tracking-no');
 
-    var trackingNo = new CheckTrackingNo(testNumber);
+var trackingNo = new CheckTrackingNo(testNumber);
 
-    trackingNo.loadConfig();
+trackingNo.loadConfig();
 
-    console.info( 'Number:', trackingNo.getNumber() );
-    console.info( 'evalCheckNumber:', trackingNo.evalCheckNumber() );
-    console.info( 'isCorrectCheckNumber:', trackingNo.isCorrectCheckNumber() );
-    console.info( 'getServiceCode:', trackingNo.getServiceCode() );
-    console.info( 'getCountryCode:', trackingNo.getCountryCode() );
+console.info( 'Number:', trackingNo.getNumber() );
+console.info( 'evalCheckNumber:', trackingNo.evalCheckNumber() );
+console.info( 'isCorrectCheckNumber:', trackingNo.isCorrectCheckNumber() );
+console.info( 'getServiceCode:', trackingNo.getServiceCode() );
+console.info( 'getCountryCode:', trackingNo.getCountryCode() );
 
-    trackingNo.loadCountriesList()
-        .then((data) => {
-            console.info( 'getCountryName:', trackingNo.getCountryName() );
-            console.info( 'getCountryUrl:', trackingNo.getCountryUrl() );
-        })
-    ;
+trackingNo.loadCountriesList()
+    .then((data) => {
+        console.info( 'getCountryName:', trackingNo.getCountryName() );
+        console.info( 'getCountryUrl:', trackingNo.getCountryUrl() );
+    })
+;
 
-    trackingNo.parseServiceCode()
-        .then((data) => {
-            data.typeExplained && console.info( 'typeExplained:', data.typeExplained);
-            data.codeExplained && console.info( 'codeExplained:', data.codeExplained);
-        })
-    ;
+trackingNo.parseServiceCode()
+    .then((data) => {
+        data.typeExplained && console.info( 'typeExplained:', data.typeExplained);
+        data.codeExplained && console.info( 'codeExplained:', data.codeExplained);
+    })
+;
 ```
 
 Description
