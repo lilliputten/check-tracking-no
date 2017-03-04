@@ -19,20 +19,14 @@ var
     fs = require('fs'),
     path = require('path'),
 
-    // Test modules...
+    // Test platform...
     // @see http://chaijs.com/
-    // chaiSinon = require('sinon-chai'),
     chai = require('chai')
-        // .use( chaiSinon )
-        .use( require('sinon-chai') )
+        // .use( require('sinon-chai') )
         .use( require('chai-as-promised') )
     ,
-    // chaiAsPromised = require('chai-as-promised'),
-    // chai.use(chaiAsPromised);
     should = chai.should(),
     expect = chai.expect,
-    // sinon = chai.sinon,
-    // assert = chai.assert,
 
     // Import module
     CheckTrackingNo = require('../index'),

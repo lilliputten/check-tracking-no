@@ -24,9 +24,7 @@
     "downcache": "0.0.9",
     "fs-extra": "^2.0.0",
     "js-yaml": "^3.8.2",
-    "mocha": "^3.2.0",
-    "sinon": "^1.17.7",
-    "sinon-chai": "^2.8.0"
+    "mocha": "^3.2.0"
   },
   "dependencies": {
     "extend": "^3.0.0"
