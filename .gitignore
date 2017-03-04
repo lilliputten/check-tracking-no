@@ -1,3 +1,12 @@
+# temp files
+.*.sw?
+*.tmp
+*.session
+
+cache
+
+### Automaticly created records - by github engine...
+
 # Logs
 logs
 *.log
@@ -35,7 +44,3 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
-
-# temp files
-.*.sw?
-*.tmp

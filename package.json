@@ -1,6 +1,6 @@
 {
   "name": "check-tracking-no",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Simple minimalistic module for checking of mailing tracking numbers",
   "main": "index.js",
   "author": "lilliputten <lilliputten@yandex.ru> (http://lilliputten.ru)",
@@ -18,8 +18,15 @@
   },
   "homepage": "https://github.com/lilliputten/check-tracking-no#readme",
   "devDependencies": {
-    "mocha": "~1.16.2",
-    "chai": "~1.8.1"
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "cheerio": "^0.22.0",
+    "downcache": "0.0.9",
+    "fs-extra": "^2.0.0",
+    "js-yaml": "^3.8.2",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7",
+    "sinon-chai": "^2.8.0"
   },
   "dependencies": {
     "extend": "^3.0.0"

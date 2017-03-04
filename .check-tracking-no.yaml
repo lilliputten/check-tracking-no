@@ -1,0 +1,17 @@
+
+# default check-tracking-no module config file
+# @see loadConfig method
+# @version 2017.03.03, 23:41
+
+# url for fetching countries list
+# @see parseCountriesList method
+# @see test/assets/countries.sample.html for expected html sample
+countriesListUrl: 'https://countrycode.org/'
+
+# {{{ html parser options (cheerio)
+cheerioOptions:
+    # normalizeWhitespace: true
+    xmlMode: true
+    decodeEntities: false
+# }}}
+

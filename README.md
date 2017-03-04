@@ -10,30 +10,53 @@ Install
 -------
 
 ```shell
-npm install check-tracking-no --save
+    npm install check-tracking-no --save
 ```
 
 Usage
 -----
 
 ```javascript
-var testNumber = 'XX410342249YY';
-var CheckTrackingNo = require('check-tracking-no');
-var trackingNo = new CheckTrackingNo(testNumber);
-console.info( 'trackingNo', trackingNo.getNumber() );
-console.info( 'evalCheckNumber', trackingNo.evalCheckNumber() );
-console.info( 'isCorrectCheckNumber:', trackingNo.isCorrectCheckNumber() );
+    var testNumber = 'RS410342249EE';
+
+    var CheckTrackingNo = require('check-tracking-no');
+
+    var trackingNo = new CheckTrackingNo(testNumber);
+
+    trackingNo.loadConfig();
+
+    console.info( 'Number:', trackingNo.getNumber() );
+    console.info( 'evalCheckNumber:', trackingNo.evalCheckNumber() );
+    console.info( 'isCorrectCheckNumber:', trackingNo.isCorrectCheckNumber() );
+    console.info( 'getServiceCode:', trackingNo.getServiceCode() );
+    console.info( 'getCountryCode:', trackingNo.getCountryCode() );
+
+    trackingNo.loadCountriesList()
+        .then((data) => {
+            console.info( 'getCountryName:', trackingNo.getCountryName() );
+            console.info( 'getCountryUrl:', trackingNo.getCountryUrl() );
+        })
+    ;
+
+    trackingNo.parseServiceCode()
+        .then((data) => {
+            data.typeExplained && console.info( 'typeExplained:', data.typeExplained);
+            data.codeExplained && console.info( 'codeExplained:', data.codeExplained);
+        })
+    ;
 ```
 
 Description
 -----------
 
-Algorithm description see at [wiki page (RU)](https://ru.wikipedia.org/wiki/Почтовый_идентификатор).
-See also [Track number decoding (RU)](http://shopinfo.com.ua/threads/rasshifrovka-trek-nomera.1170/).
+Algorithm description see at
+[wiki page (EN)](https://en.wikipedia.org/wiki/Tracking_number),
+[wiki page (RU)](https://ru.wikipedia.org/wiki/Почтовый_идентификатор).
+See also [Track number decoding (RU)](http://shopinfo.com.ua/threads/rasshifrovka-trek-nomera.1170).
 
 Working with 13-digit mail tracking numbers:
 ```
-Sample No: XX123456789YY
+Sample No: RS410342249EE
 Positions: 0123456789012
            |||||||||||** . ##11-12 . Country code (##11-12)
            ||||||||||* ... #10 ..... Check digit (#10)
