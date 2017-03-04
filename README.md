@@ -10,7 +10,7 @@ Install
 -------
 
 ```shell
-    npm install check-tracking-no --save
+npm install check-tracking-no --save
 ```
 
 Usage
