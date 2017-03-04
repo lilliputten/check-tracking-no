@@ -67,7 +67,7 @@ Positions: 0123456789012
 Check number evaluating algorithm
 ---------------------------------
 
-See method [evalCheckNumber](https://github.com/lilliputten/check-tracking-no/blob/fad75e6b/index.js#L246-L257) in
+See method [evalCheckNumber](https://github.com/lilliputten/check-tracking-no/blob/v0.0.3/index.js#L246-L257) in
 [index.js](https://github.com/lilliputten/check-tracking-no/blob/master/index.js).
 
 ``` javascript
